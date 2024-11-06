@@ -17,7 +17,7 @@
       function FromUnityToJs(value) {
         const intvalue=parseInt(value);
         console.log("Value received from Unity:", intvalue);
-        vkBridge.send("VKWebAppShowLeaderBoardBox", {user_result: intvalue,global:1}); 
+        vkBridge.send("VKWebAppShowLeaderBoardBox", {"user_result":intvalue,"global":1}); 
        }
       jQuery(document).ready(function($) // страница прогружена
        {
